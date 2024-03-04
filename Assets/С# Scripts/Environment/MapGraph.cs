@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Graph
+public class MapGraph
 {
     private List<GraphNode> nodes = new List<GraphNode>();
 
-    public Graph(int size)
+    public MapGraph(int size)
     {
         for (int i = 0; i < size; i++)
         {

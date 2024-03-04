@@ -7,7 +7,7 @@ public class Map : MonoBehaviour
 {
     public int graphSize => transform.childCount;
 
-    private Graph graph;
+    private MapGraph graph;
     private Vector3 labelPosition;
     public static Map instance;
     private void Awake()
@@ -23,8 +23,8 @@ public class Map : MonoBehaviour
     {
         CreateGraph();
         FindePath(5, 0);
-    } 
-
+    }
+#if UNITY_EDITOR
     void OnDrawGizmos()
     {
         Gizmos.color = Color.white;
@@ -48,10 +48,10 @@ public class Map : MonoBehaviour
             id++;
         }
     }
-    
+#endif  
     public void CreateGraph()
     {
-        graph = new Graph(graphSize);
+        graph = new MapGraph(graphSize);
         int id = 0;
         foreach (Transform child in transform)
         {
