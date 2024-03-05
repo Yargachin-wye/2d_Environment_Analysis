@@ -1,0 +1,7 @@
+conda activate mlagents
+
+mlagents-learn --force --run-id=test
+
+mlagents-learn --force Config\Agent_Moving.yaml --run-id=test1
+
+mlagents-learn --force Config\Agent_Moving.yaml --initialize-from=Agent_Moving --run-id=test2
