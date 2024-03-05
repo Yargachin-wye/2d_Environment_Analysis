@@ -5675,9 +5675,21 @@ PrefabInstance:
       value: Agent
       objectReference: {fileID: 0}
     - target: {fileID: 9029670597348039130, guid: c9cc14596b2a3d644835774c0d295e74, type: 3}
+      propertyPath: spead
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029670597348039130, guid: c9cc14596b2a3d644835774c0d295e74, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1276713666}
+    - target: {fileID: 9029670597348039130, guid: c9cc14596b2a3d644835774c0d295e74, type: 3}
+      propertyPath: MaxStep
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029670597348039130, guid: c9cc14596b2a3d644835774c0d295e74, type: 3}
+      propertyPath: winReward
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9029670597348039130, guid: c9cc14596b2a3d644835774c0d295e74, type: 3}
       propertyPath: spawnsAgent
       value: 
