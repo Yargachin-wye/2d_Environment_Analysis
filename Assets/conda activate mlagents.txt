@@ -1,7 +1,7 @@
-conda activate mlagents
+conda activate mlagents && cd /d D:\Unity\2d_Environment_Analysis
 
-mlagents-learn --force --run-id=test
+mlagents-learn --force --run-id=test_
 
-mlagents-learn --force Config\Agent_Moving.yaml --run-id=test1
+mlagents-learn --force Config\Agent_Moving.yaml --run-id=test_
 
 mlagents-learn --force Config\Agent_Moving.yaml --initialize-from=Agent_Moving --run-id=test2
